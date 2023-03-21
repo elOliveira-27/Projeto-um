@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #205E61;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #F9F54B;
+    --cor-quarta: #184547;
+    --cor-hover: #3F979B;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.header {
+    padding: 2% 10%;
+    background-color: var(--cor-quarta)
+}
+
+.header__menu {
+    display:flex;
+    gap: 80px;
+}
+
+.header__menu__link {
+    font-size: 1rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    color: var(--cor-terciaria);
+    text-decoration:none;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 10%;
+}
+
+.banner__copy {
+    width: 50%;
+    display:flex;
+    flex-direction:column;
+    padding: 0 2% 5% 0%;
+}
+
+.banner__imagem {
+    width: 50%;
+    border-radius: 50px;
+    border: 4px solid var(--cor-terciaria);
+}
+
+.sessao__redes {
+    padding: 5% 10%;
+    display: flex;
+    flex-direction:column;
+}
+
+.sessao__redes__botoes {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 5%
+}
+
+.sessao__conteiner {
+    display: flex;
+    margin: 1% 10%;
+}
+
+.sessao__conteiner__coluna__esquerda {
+    padding:0 8% 0 0;
+}
+
+.conteiner {
+    display:flex;
+    flex-direction: column;
+    padding: 50px 0 ;
+}
+
+.conteiner__itens {
+    display:flex;
+    flex-direction: column;
+    padding: 10px 0 ;
+}
+
+.copy__titulo__primario {
+    font-size: 2.5rem;
+    font-family: var(--fonte-primaria);
+    padding: 0 0 5% 0;
+}
+
+.copy__titulo__primario__destaque{
+    color: var(--cor-terciaria);
+}
+
+.copy__titulo__secundario {
+    font-size: 2rem;
+    font-family: var(--fonte-primaria);
+    text-align: center;
+    padding: 0 0 4% 0;
+}
+
+.copy__titulo__terciario {
+    font-size: 2rem;
+    font-family: var(--fonte-primaria);
+    padding: 0 0 1% 0;
+    color: var(--cor-terciaria);
+}
+
+.copy__texto__primario {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    padding: 0 0 5% 0;
+}
+
+.copy__texto__secundario {
+    font-size: 1.25rem;
+    font-family: var(--fonte-secundaria);
+    padding: 0 0 10px 0;
+}
+
+.copy__texto__terciario {
+    font-size: 1rem;
+    font-family: var(--fonte-secundaria);
+    padding: 0 0 10px 0;
+}
+
+.copy__texto__quarto {
+    font-size: 0.7rem;
+    font-family: var(--fonte-secundaria);
+    font-style: italic;
+    padding: 0 0 10px 0;
+}
+
+.copy__texto__quinto {
+    font-size: 1rem;
+    font-family: var(--fonte-secundaria);
+    padding: 2% 0 0 0;
+    line-height:2rem;
+}
+
+.copy__botao__primario {
+    background-color: var(--cor-secundaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 18px; 
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: var(--fonte-secundaria);
+    padding: 22px 0;
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+.copy__botao__secundario {
+    display:flex;
+    justify-content: center;
+    gap:16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 18px; 
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: var(--fonte-secundaria);
+    padding: 22px 0;
+    margin: 0 40px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+.copy__botao__primario:hover{
+    background-color: var(--cor-terciaria);
+}
+
+.copy__botao__secundario:hover{
+background-color: var(--cor-hover);
+}
+
+.footer {
+    background-color: var(--cor-quarta);
+    padding: 2%;
+    color: var(--cor-secundaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 0.7rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+
+}
+
+
+@media (max-width: 1200px) {
+    
+    .header {
+        padding: 10% 5%
+    }
+
+    .header__menu {
+        justify-content: center;
+        gap: 40px;
+    }
+    
+    .banner {
+        flex-direction:column;
+        padding: 5%;
+    }
+
+    .banner__copy {
+        width:auto;
+        align-items:center;
+        padding: 8% 0;
+    }
+
+    .banner__imagem {
+        width: 95%;
+        border-radius: 20px;
+        border: 2px solid var(--cor-terciaria);
+    }
+
+    .sessao__redes {
+        padding: 10% 5%;
+    }
+
+    .sessao__redes__botoes {
+        flex-direction:column;
+        width:auto;
+        padding: 8% 0 0 0;
+    }
+
+    .sessao__conteiner {
+        flex-direction:column;
+        margin: 5%;
+    }
+
+    .sessao__conteiner__coluna__esquerda {
+        padding:0;
+    }
+
+    .conteiner {
+        padding: 10% 0;
+    }
+
+    .conteiner__itens {
+        padding: 5% 0 ;
+    }
+
+    .copy__titulo__primario {
+        font-size: 1.5rem;
+        font-family: var(--fonte-primaria);
+        text-align: center;
+        padding: 0 0 4% 0;
+    }
+    
+    .copy__titulo__primario__destaque{
+        color: var(--cor-terciaria);
+    }
+    
+    .copy__titulo__secundario {
+        font-size: 1.5rem;
+        font-family: var(--fonte-primaria);
+        text-align: center;
+        padding: 0 0 4% 0;
+    }
+
+    .copy__titulo__terciario {
+        font-size: 1.5rem;
+        padding: 0;
+        text-align: center;
+    }
+
+    .copy__texto__primario {;
+        font-size: 1.25rem;
+        font-family: var(--fonte-secundaria);
+        text-align: center;
+        padding: 0 0 5% 0;
+    }
+
+    .copy__texto__secundario {
+        text-align: center;
+    }
+    
+    .copy__texto__terciario {
+        text-align: center;
+    }
+    
+    .copy__texto__quarto {
+        text-align: center;
+    }
+    
+    .copy__texto__quinto {
+        text-align: center;
+    }
+
+    .copy__botao__primario {
+        width: 75%;
+        border-radius: 10px; 
+        font-size: 1rem;
+        padding: 16px 0;
+    }
+
+    .copy__botao__secundario {
+        width: 75%;
+        border-radius: 10px; 
+        font-size: 1rem;
+        padding: 16px 0;
+        margin: 0 0 20px 0;
+    }
+
+    .footer {
+        padding: 10% 5%;
+    }
+}
